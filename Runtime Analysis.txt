@@ -1,0 +1,9 @@
+Single-threaded CPU approach:
+Because N elements would require N additions, the runtime scales as O(N). 
+
+Naive GPU approach:
+Because each thread adds up all elements needed for each output array element in parallel, the runtime scales as O(N^2).
+
+Recursive doubling GPU approach:
+Because the approach involves log(N) phases, where O(N) additions are performed in parallel during 
+each phase, the runtime scales as O(log(N)). 

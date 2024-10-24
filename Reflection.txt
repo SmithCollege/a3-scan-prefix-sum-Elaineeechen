@@ -1,0 +1,21 @@
+Did your graph match your runtime analysis expectations:
+In general, the graph aligns with my runtime analysis expectations. When looking at the CPU 
+sequential curve, it demonstrates the fastest runtime among all approaches for small array lengths, 
+but as the length increases, it no longer runs as fast as the recursive doubling approach. Regarding 
+the GPU naive curve, it increases as the array length grows, and the rate of increase also 
+accelerates. 
+While the overall trend as well as comparisons among the three curves match my expectation, the shape 
+of the CPU sequential and GPU recursive doubling curve differs slightly. Because I’m scaling the y-
+axis (execution time in ns) using a logarithm with base 10, the CPU sequential curve should exhibit a 
+parabola instead, while the GPU recursive doubling curve should appear more linear. 
+
+What went well with this assignment:
+Understanding the requirements of this assignment was quite easy. 
+
+What was difficult:
+Because in A2, we were given the code for stencil, and the task primarily focused on understanding 
+it, jumping straight into coding the three algorithms this time was a little challenging, especially 
+the recursive doubling one. 
+
+How would you approach differently:
+Again, I would consider starting even earlier. 
